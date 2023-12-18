@@ -35,7 +35,7 @@ namespace gitHubCommit
                 }
             }
             Console.WriteLine("legnagyobb: "+c);
-            Console.ReadKey();
+            
 
             List<int> lista2 = new List<int>();
             Console.WriteLine("Egy számot: ");
@@ -52,6 +52,17 @@ namespace gitHubCommit
                 Console.WriteLine("Egy számot: ");
                 a2 = Convert.ToInt32(Console.ReadLine());
                 lista.Add(a2);
+             int c2 = 0;
+                foreach (var item in lista)
+                {
+                    if (item > c2)
+                    {
+                        c2 = item;
+                    }
+                }
+                Console.WriteLine("legnagyobb: " + c2);
+
+                Console.ReadKey();
             }
         }
     }
