@@ -38,6 +38,21 @@ namespace gitHubCommit
             Console.ReadKey();
 
             List<int> lista2 = new List<int>();
+            Console.WriteLine("Egy számot: ");
+            int a2 = Convert.ToInt32(Console.ReadLine());
+            string b2 = "";
+            while (a2 != 0)
+            {
+                b2 = "";
+                foreach (var item in lista)
+                {
+                    b2 += (item + ", ");
+                }
+                Console.WriteLine(b2);
+                Console.WriteLine("Egy számot: ");
+                a2 = Convert.ToInt32(Console.ReadLine());
+                lista.Add(a2);
+            }
         }
     }
 }
