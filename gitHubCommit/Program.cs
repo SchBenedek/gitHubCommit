@@ -36,6 +36,8 @@ namespace gitHubCommit
             }
             Console.WriteLine("legnagyobb: "+c);
             Console.ReadKey();
-           }
+
+            List<int> lista2 = new List<int>();
+        }
     }
 }
